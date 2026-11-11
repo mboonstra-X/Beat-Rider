@@ -35,6 +35,11 @@ public class BikeMovement : MonoBehaviour
             // Move bike horizontally
             Vector3 newPosition = transform.position;
 
+            newPosition.x = Mathf.Lerp(
+                transform.position.x,
+                targetX,
+                5 * Time.deltaTime
+            );
 
             newPosition.z = startZ;
 
