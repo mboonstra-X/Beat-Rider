@@ -32,7 +32,7 @@ public class BikeMovement : MonoBehaviour
             float maxX = WegBreedte / 2 - MaxBikeMove;
             float targetX = Mathf.Clamp(targetPosition.x, -maxX, maxX);
 
-            // Move bike horizontally
+            // Bike Movement (L > R)
             Vector3 newPosition = transform.position;
 
             newPosition.x = Mathf.Lerp(
