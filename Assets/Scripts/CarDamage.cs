@@ -22,6 +22,8 @@ public class CarDamage : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(carDMG);
+                BoxCollider boxCollider = GetComponent<BoxCollider>();
+                boxCollider.enabled = false;
             }
         }
     }
