@@ -269,7 +269,6 @@ GameObject:
   - component: {fileID: 23102675}
   - component: {fileID: 23102674}
   - component: {fileID: 23102673}
-  - component: {fileID: 23102676}
   m_Layer: 0
   m_Name: RoadLine
   m_TagString: Untagged
@@ -349,19 +348,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1881015473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &23102676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23102671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
 --- !u!1 &58149413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,7 +1364,6 @@ GameObject:
   - component: {fileID: 398730358}
   - component: {fileID: 398730357}
   - component: {fileID: 398730356}
-  - component: {fileID: 398730359}
   m_Layer: 0
   m_Name: RoadLine
   m_TagString: Untagged
@@ -1458,19 +1443,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1881015473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &398730359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398730354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
 --- !u!1 &402586904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,7 +1720,6 @@ GameObject:
   - component: {fileID: 439282950}
   - component: {fileID: 439282949}
   - component: {fileID: 439282948}
-  - component: {fileID: 439282951}
   m_Layer: 0
   m_Name: RoadLine
   m_TagString: Untagged
@@ -1828,19 +1799,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1881015473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &439282951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439282946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
 --- !u!1 &461650086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,7 +2745,6 @@ GameObject:
   - component: {fileID: 1092457727}
   - component: {fileID: 1092457726}
   - component: {fileID: 1092457725}
-  - component: {fileID: 1092457728}
   m_Layer: 0
   m_Name: RoadLine
   m_TagString: Untagged
@@ -2867,19 +2824,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1881015473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1092457728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092457723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
 --- !u!1 &1216874870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,7 +2974,6 @@ GameObject:
   - component: {fileID: 1305301903}
   - component: {fileID: 1305301902}
   - component: {fileID: 1305301901}
-  - component: {fileID: 1305301904}
   m_Layer: 0
   m_Name: RoadLine
   m_TagString: Untagged
@@ -3110,19 +3053,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1881015473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1305301904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305301899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
 --- !u!1 &1378410736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,7 +3064,6 @@ GameObject:
   - component: {fileID: 1378410740}
   - component: {fileID: 1378410739}
   - component: {fileID: 1378410738}
-  - component: {fileID: 1378410741}
   m_Layer: 0
   m_Name: RoadLine
   m_TagString: Untagged
@@ -3214,19 +3143,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1881015473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1378410741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378410736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
 --- !u!1 &1411895791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,7 +3154,6 @@ GameObject:
   - component: {fileID: 1411895795}
   - component: {fileID: 1411895794}
   - component: {fileID: 1411895793}
-  - component: {fileID: 1411895796}
   m_Layer: 0
   m_Name: RoadLine
   m_TagString: Untagged
@@ -3318,19 +3233,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1881015473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1411895796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411895791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
 --- !u!1 &1498007578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4931852195184010030, guid: e12eba67ee12abb4eb46eafeaf3b4011, type: 3}
@@ -4535,7 +4437,6 @@ GameObject:
   - component: {fileID: 1941577756}
   - component: {fileID: 1941577755}
   - component: {fileID: 1941577754}
-  - component: {fileID: 1941577757}
   m_Layer: 0
   m_Name: RoadLine
   m_TagString: Untagged
@@ -4615,19 +4516,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1881015473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1941577757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941577752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
 --- !u!1 &2031329215
 GameObject:
   m_ObjectHideFlags: 0
