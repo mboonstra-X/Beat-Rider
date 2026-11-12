@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 
 public class BikeMovement : MonoBehaviour
 {
-    public float WegBreedte = 10f;
-    public float MaxBikeMove = 0.8f;
+    public float roadWidth = 10f;
+    public float maxBikeMovement = 0.8f;
 
     private float startZ;
 
@@ -29,7 +29,7 @@ public class BikeMovement : MonoBehaviour
             Vector3 targetPosition = ray.GetPoint(distance);
 
             // Keep bike inside the road
-            float maxX = WegBreedte / 2 - MaxBikeMove;
+            float maxX = roadWidth / 2 - maxBikeMovement;
             float targetX = Mathf.Clamp(targetPosition.x, -maxX, maxX);
 
             // Bike Movement (L > R)
@@ -38,7 +38,7 @@ public class BikeMovement : MonoBehaviour
             newPosition.x = Mathf.Lerp(
                 transform.position.x,
                 targetX,
-                5 * Time.deltaTime
+                2
             );
 
             newPosition.z = startZ;
