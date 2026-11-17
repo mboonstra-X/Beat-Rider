@@ -14,5 +14,6 @@ public class ButtonBehaviour : MonoBehaviour
     public void PlayButton()
     {
         SceneManager.LoadScene("MainScene");
+        
     }
 }

@@ -494,6 +494,7 @@ GameObject:
   - component: {fileID: 252240300}
   - component: {fileID: 252240299}
   - component: {fileID: 252240302}
+  - component: {fileID: 252240303}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -626,6 +627,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c764a5bc586758f429f456e1b1dac0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehaviour
+--- !u!114 &252240303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252240297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee3a9cc8ed784b4aa655ddc364fb627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHover
+  textObject: {fileID: 408042535}
 --- !u!1 &289868350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,6 +1775,7 @@ GameObject:
   - component: {fileID: 2142452962}
   - component: {fileID: 2142452961}
   - component: {fileID: 2142452964}
+  - component: {fileID: 2142452965}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1784,7 +1799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.083, y: 10.548244}
+  m_AnchoredPosition: {x: -6, y: 10.5}
   m_SizeDelta: {x: 45.291, y: 17.165}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142452961
@@ -1893,6 +1908,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c764a5bc586758f429f456e1b1dac0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehaviour
+--- !u!114 &2142452965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142452959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee3a9cc8ed784b4aa655ddc364fb627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHover
+  textObject: {fileID: 1083235345}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
