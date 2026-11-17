@@ -4,7 +4,7 @@ public class PlayerHealth : MonoBehaviour
 {
     //Car 20% loss, Note miss 5% HP loss
     [SerializeField] private int playerHealth = 100;
-    [SerializeField] private int currentHealth;
+    [SerializeField] public int currentHealth;
 
 
     void Start()
