@@ -12,6 +12,7 @@ public class CarDamage : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(carDMG);
+                playerHealth.UpdateHealthColor();
                 ScoreManager.instance.ResetCombo();
                 BoxCollider boxCollider = GetComponent<BoxCollider>();
                 boxCollider.enabled = false;

@@ -24,6 +24,7 @@ public class NoteDamage : MonoBehaviour
         }
 
         playerHealth.TakeDamage(noteDMG);
+        playerHealth.UpdateHealthColor();
         ScoreManager.instance.ResetCombo();
 
         Destroy(gameObject);
