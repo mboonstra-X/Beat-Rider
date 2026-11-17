@@ -14,18 +14,18 @@ public class NoteDamage : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player == null)
         {
-            Debug.LogWarning("No GameObject with the Player tag was found.");
             return;
         }
 
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
         if (playerHealth == null)
         {
-            Debug.LogWarning("The Player object does not have a PlayerHealth component.");
             return;
         }
 
         playerHealth.TakeDamage(noteDMG);
+        ScoreManager.instance.ResetCombo();
+
         Destroy(gameObject);
 
         Debug.Log("Note hit wall, player took damage: " + noteDMG);
