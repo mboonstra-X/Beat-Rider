@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7170590715690860996}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,8 +158,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.6442075, y: 1.3150443, z: 4.5168676}
-  m_Center: {x: -0.04203701, y: 0.65704817, z: 0.20051146}
+  m_Size: {x: 1.6442075, y: 1.9774368, z: 4.5168676}
+  m_Center: {x: -0.042037025, y: 0.32585153, z: 0.20051141}
 --- !u!114 &7333359957573910695
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -35,7 +35,9 @@ public class ScoreManager : MonoBehaviour
 
     public void AddScore()
     {
-        int multiplier = 1 + (combo / 10);
+        // combo cap at MAX 50 score per hit, so multiplier is capped at 6 (1 + 50/10)
+
+        int multiplier = 1 + Mathf.Min(combo, 50) / 10;
         score += 10 * multiplier;
 
         scoreText.text = "Score: " + score;

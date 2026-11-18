@@ -925,9 +925,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'REPLAY
-
-'
+  m_text: MENU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 73c053ed56b9dc949bb90cceee3c9a9a, type: 2}
   m_sharedMaterial: {fileID: -1726240302888463164, guid: 73c053ed56b9dc949bb90cceee3c9a9a, type: 2}

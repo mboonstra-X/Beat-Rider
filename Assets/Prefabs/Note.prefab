@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2863123174234817397}
   m_Layer: 0
   m_Name: Note
-  m_TagString: Untagged
+  m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2242009097890089831}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.22, y: 0.1833, z: 267.97}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 0.17813803, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -113,8 +113,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 17.311338, z: 1}
+  m_Center: {x: 0, y: -0.9306625, z: 0}
 --- !u!114 &6740809387099515001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteHit
   NoteHitSound: {fileID: 8300000, guid: 8a310e47e6bf4494089aefee1b313d2f, type: 3}
-  hitVolume: 0.253
+  hitVolume: 0.15
 --- !u!114 &6284102851091782934
 MonoBehaviour:
   m_ObjectHideFlags: 0

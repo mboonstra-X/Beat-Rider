@@ -32,7 +32,7 @@ public class BeatDetector : MonoBehaviour
             if (time < note.time)
                 break;
 
-            noteSpawner.SpawnNote();
+            StartCoroutine(noteSpawner.SpawnNote());
 
             nextNoteIndex++;
         }

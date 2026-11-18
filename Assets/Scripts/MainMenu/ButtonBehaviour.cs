@@ -3,6 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class ButtonBehaviour : MonoBehaviour
 {
+    // Return to Menu Button
+    public void Return2Menu()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+
+
     // Quit Button
     public void QuitButton()
     {
@@ -13,7 +20,6 @@ public class ButtonBehaviour : MonoBehaviour
     // Play Button
     public void PlayButton()
     {
-        SceneManager.LoadScene("MainScene");
-        
+        SceneManager.LoadScene("SceneLoader");
     }
 }
