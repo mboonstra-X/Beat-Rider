@@ -127,7 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6266ba11a6dc31340b106a3a1abb109d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteHit
-  NoteHitSound: {fileID: 5863969253339307813, guid: fb8b2ef4de4ba084c9ce15d6257684df, type: 3}
+  NoteHitSound: {fileID: 8300000, guid: 8a310e47e6bf4494089aefee1b313d2f, type: 3}
+  hitVolume: 0.253
 --- !u!114 &6284102851091782934
 MonoBehaviour:
   m_ObjectHideFlags: 0

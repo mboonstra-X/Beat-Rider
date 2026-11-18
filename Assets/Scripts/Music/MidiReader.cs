@@ -6,7 +6,7 @@ using Melanchall.DryWetMidi.Interaction;
 
 public class MidiReader : MonoBehaviour
 {
-    public string midiFileName = "I've Been Watching You.mid";
+    public string midiFileName = "";
 
     public List<MidiNoteData> notes = new List<MidiNoteData>();
 
