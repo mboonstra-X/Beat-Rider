@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 316157149594066112}
   - component: {fileID: 1487656634087991363}
   m_Layer: 0
-  m_Name: Bike
+  m_Name: BikePrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

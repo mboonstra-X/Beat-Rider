@@ -1,23 +1,19 @@
-
 using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
-    public GameObject normalObstacle;
-    public GameObject spikeObstacle;
+    public GameObject carPrefab;
 
-    public Transform spawnPoint;
+    public Transform[] lanes;
 
-    public void SpawnObstacle(bool isSpike)
+    public void SpawnCar()
     {
-        GameObject prefab = isSpike
-            ? spikeObstacle
-            : normalObstacle;
+        int randomLane = Random.Range(0, lanes.Length);
 
         Instantiate(
-            prefab,
-            spawnPoint.position,
-            spawnPoint.rotation
+            carPrefab,
+            lanes[randomLane].position,
+            lanes[randomLane].rotation
         );
     }
 }

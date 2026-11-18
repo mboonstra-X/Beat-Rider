@@ -3,16 +3,18 @@ using UnityEngine;
 public class BeatDetector : MonoBehaviour
 {
     public MusicManager musicManager;
-    public GameObject obstacleSpawner;
     public MidiReader midiReader;
 
-    private ObstacleSpawner spawner;
+    public NoteSpawner noteSpawner;
+    public ObstacleSpawner obstacleSpawner;
+
+    private float carSpawnTimer = 0f;
+    public float carSpawnInterval = 3f;
+
     private int nextNoteIndex = 0;
 
     void Start()
     {
-        spawner = obstacleSpawner.GetComponent<ObstacleSpawner>();
-
         if (!midiReader.LoadMidi())
         {
             enabled = false;
@@ -21,9 +23,6 @@ public class BeatDetector : MonoBehaviour
 
     void Update()
     {
-        if (!musicManager.music.isPlaying)
-            return;
-
         double time = musicManager.SongTime;
 
         while (nextNoteIndex < midiReader.notes.Count)
@@ -33,12 +32,20 @@ public class BeatDetector : MonoBehaviour
             if (time < note.time)
                 break;
 
-            // Pitch 38 = spike, pitch 37 = normal
-            bool isSpike = note.pitch == 38;
-
-            spawner.SpawnObstacle(isSpike);
+            noteSpawner.SpawnNote();
 
             nextNoteIndex++;
+        }
+
+        if (musicManager.music.isPlaying)
+        {
+            carSpawnTimer += Time.deltaTime;
+
+            if (carSpawnTimer >= carSpawnInterval)
+            {
+                obstacleSpawner.SpawnCar();
+                carSpawnTimer = 0f;
+            }
         }
     }
 }
