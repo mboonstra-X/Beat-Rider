@@ -11,12 +11,14 @@ public class BeatDetector : MonoBehaviour
 
     private float[] spectrum = new float[1024];
 
+    private ObstacleSpawner spawner;
     private double nextBeat;
     private float previousBass;
     private float cooldown;
 
     void Start()
     {
+        spawner = obstacleSpawner.GetComponent<ObstacleSpawner>();
         nextBeat = musicManager.BeatInterval;
     }
 
