@@ -1,25 +1,22 @@
-
 using UnityEngine;
 
 public class BeatDetector : MonoBehaviour
 {
     public MusicManager musicManager;
     public GameObject obstacleSpawner;
-
-    public float spikeThreshold = 0.12f;
-    public float spikeCooldown = 0.25f;
-
-    private float[] spectrum = new float[1024];
+    public MidiReader midiReader;
 
     private ObstacleSpawner spawner;
-    private double nextBeat;
-    private float previousBass;
-    private float cooldown;
+    private int nextNoteIndex = 0;
 
     void Start()
     {
         spawner = obstacleSpawner.GetComponent<ObstacleSpawner>();
-        nextBeat = musicManager.BeatInterval;
+
+        if (!midiReader.LoadMidi())
+        {
+            enabled = false;
+        }
     }
 
     void Update()
@@ -27,38 +24,21 @@ public class BeatDetector : MonoBehaviour
         if (!musicManager.music.isPlaying)
             return;
 
-        cooldown -= Time.deltaTime;
-
         double time = musicManager.SongTime;
 
-        // BPM detection
-        if (time >= nextBeat)
+        while (nextNoteIndex < midiReader.notes.Count)
         {
-            spawner.SpawnObstacle(false);
+            MidiNoteData note = midiReader.notes[nextNoteIndex];
 
-            nextBeat += musicManager.BeatInterval;
+            if (time < note.time)
+                break;
+
+            // Pitch 38 = spike, pitch 37 = normal
+            bool isSpike = note.pitch == 38;
+
+            spawner.SpawnObstacle(isSpike);
+
+            nextNoteIndex++;
         }
-
-        // Bass spike detection
-        musicManager.music.GetSpectrumData(
-            spectrum, 0, FFTWindow.Blackman
-        );
-
-        float bass = 0f;
-
-        for (int i = 1; i < 20; i++)
-        {
-            bass += spectrum[i];
-        }
-
-        float spike = bass - previousBass;
-
-        if (spike > spikeThreshold && cooldown <= 0)
-        {
-            obstacleSpawner.GetComponent<ObstacleSpawner>().SpawnObstacle(true);
-            cooldown = spikeCooldown;
-        }
-
-        previousBass = bass;
     }
 }
