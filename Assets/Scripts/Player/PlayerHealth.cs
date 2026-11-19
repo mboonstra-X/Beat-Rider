@@ -31,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            ScoreManager.instance.SaveResults();
             SceneManager.LoadScene("DeathScene");
         }
     }

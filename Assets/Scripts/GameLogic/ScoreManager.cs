@@ -1,3 +1,4 @@
+
 using TMPro;
 using UnityEngine;
 
@@ -17,6 +18,8 @@ public class ScoreManager : MonoBehaviour
     public int combo = 0;
     [SerializeField] private TextMeshProUGUI comboText;
 
+    private int highestCombo = 0;
+
     private void Awake()
     {
         instance = this;
@@ -27,6 +30,11 @@ public class ScoreManager : MonoBehaviour
         hits++;
         combo++;
 
+        if (combo > highestCombo)
+        {
+            highestCombo = combo;
+        }
+
         hitsText.text = "Hits: " + hits;
         comboText.text = "Combo: " + combo;
 
@@ -35,8 +43,6 @@ public class ScoreManager : MonoBehaviour
 
     public void AddScore()
     {
-        // combo cap at MAX 50 score per hit, so multiplier is capped at 6 (1 + 50/10)
-
         int multiplier = 1 + Mathf.Min(combo, 50) / 10;
         score += 10 * multiplier;
 
@@ -47,5 +53,12 @@ public class ScoreManager : MonoBehaviour
     {
         combo = 0;
         comboText.text = "Combo: " + combo;
+    }
+
+    public void SaveResults()
+    {
+        GameResults.Score = score;
+        GameResults.Hits = hits;
+        GameResults.HighestCombo = highestCombo;
     }
 }

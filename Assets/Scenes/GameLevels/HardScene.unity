@@ -3495,7 +3495,7 @@ MonoBehaviour:
   midiReader: {fileID: 1946991090}
   noteSpawner: {fileID: 913792822}
   obstacleSpawner: {fileID: 164344431}
-  carSpawnInterval: 3.2
+  carSpawnInterval: 0.4
 --- !u!4 &1946991092
 Transform:
   m_ObjectHideFlags: 0

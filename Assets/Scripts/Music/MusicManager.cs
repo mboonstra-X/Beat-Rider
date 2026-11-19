@@ -29,6 +29,7 @@ public class MusicManager : MonoBehaviour
 
         yield return new WaitWhile(() => music.isPlaying);
 
+        ScoreManager.instance.SaveResults();
         SceneManager.LoadScene("EndScene");
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6284102851091782934}
   - component: {fileID: 2863123174234817397}
   m_Layer: 0
-  m_Name: Note 2
+  m_Name: PrettyHardNote
   m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7285ee4c15c9eae4498a57b2f9f2cc5e, type: 2}
+  - {fileID: 2100000, guid: d705df452e2006c448b0b7632cbd2d21, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d562ab846fe85840a3f89f2fc9ccbf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteMovement
-  speed: 25
+  speed: 35
 --- !u!114 &2863123174234817397
 MonoBehaviour:
   m_ObjectHideFlags: 0

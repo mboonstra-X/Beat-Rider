@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3091c3c440bffcd429c156d107f75b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
-  carPrefab: {fileID: 6861802741794429573, guid: 93c0c653a2bd51946899dc5e10e5ca27, type: 3}
+  carPrefab: {fileID: 6861802741794429573, guid: f49a68ee6435aa946b650d3064eda70d, type: 3}
   lanes:
   - {fileID: 634066443}
   - {fileID: 692675305}
@@ -1642,7 +1642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da36dbfcdd42764a980bf362b783f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteSpawner
-  notePrefab: {fileID: 2242009097890089831, guid: a67759a9056513e4e9bd598b58fb2280, type: 3}
+  notePrefab: {fileID: 2242009097890089831, guid: 40e3df21ee1593c4eb806f923a6bd46e, type: 3}
+  startDelay: 0
   lanes:
   - {fileID: 634066443}
   - {fileID: 692675305}
@@ -1797,8 +1798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
   music: {fileID: 1996806642}
-  bpm: 120
-  startDelay: 2.3
+  startDelay: 1.5
 --- !u!1 &1196782393
 GameObject:
   m_ObjectHideFlags: 0
@@ -3477,7 +3477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bae0cc861665e439edb1fad168c98c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MidiReader
-  midiFileName: Watery Graves.mid
+  midiFileName: I've Been Watching You.mid
   notes: []
 --- !u!114 &1946991091
 MonoBehaviour:
@@ -3495,7 +3495,7 @@ MonoBehaviour:
   midiReader: {fileID: 1946991090}
   noteSpawner: {fileID: 913792822}
   obstacleSpawner: {fileID: 164344431}
-  carSpawnInterval: 3.2
+  carSpawnInterval: 1.2
 --- !u!4 &1946991092
 Transform:
   m_ObjectHideFlags: 0

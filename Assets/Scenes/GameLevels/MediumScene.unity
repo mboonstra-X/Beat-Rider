@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3091c3c440bffcd429c156d107f75b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
-  carPrefab: {fileID: 6861802741794429573, guid: 93c0c653a2bd51946899dc5e10e5ca27, type: 3}
+  carPrefab: {fileID: 6861802741794429573, guid: 2a109bc9b58dcf6459b644eb5256a36d, type: 3}
   lanes:
   - {fileID: 634066443}
   - {fileID: 692675305}
@@ -1404,68 +1404,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoadLineSpawner
   roadLine: {fileID: 1708429922495424523, guid: 7ec954d51eacc1f41b8227feb6debdca, type: 3}
   roadLineSpawner: {fileID: 617289761}
---- !u!1001 &629355985
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.19477
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.90691
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492088068225359607, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7453883497007327479, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-      propertyPath: m_Name
-      value: Bad Piggies Theme
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
---- !u!82 &629355986 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3265488315576700447, guid: bea6fa36846300a499a57fa643928ef2, type: 3}
-  m_PrefabInstance: {fileID: 629355985}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &634066442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,13 +1642,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da36dbfcdd42764a980bf362b783f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteSpawner
-  notePrefab: {fileID: 2242009097890089831, guid: a67759a9056513e4e9bd598b58fb2280, type: 3}
+  notePrefab: {fileID: 2242009097890089831, guid: 060db1fca9334ef45833054746af108a, type: 3}
   startDelay: 0.5
   lanes:
   - {fileID: 634066443}
   - {fileID: 692675305}
   - {fileID: 2146898185}
   - {fileID: 1944422312}
+--- !u!1001 &1086023988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4283433399188588158, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5048138577366244144, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_Name
+      value: Pigstep (Stereo Mix) - KURAINE
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.22059
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.82909
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996825321897962824, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+--- !u!82 &1086023989 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4283433399188588158, guid: f7290ee4a5f6b0648b45a4119bf44429, type: 3}
+  m_PrefabInstance: {fileID: 1086023988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1092457723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,7 +1863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62618f03ee2e2aa4a82d40eb364b76f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
-  music: {fileID: 629355986}
+  music: {fileID: 1086023989}
   startDelay: 2.1
 --- !u!1 &1196782393
 GameObject:
@@ -3539,7 +3543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bae0cc861665e439edb1fad168c98c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MidiReader
-  midiFileName: Bad Piggies Theme.mid
+  midiFileName: Pigstep.mid
   notes: []
 --- !u!114 &1946991091
 MonoBehaviour:
@@ -3557,7 +3561,7 @@ MonoBehaviour:
   midiReader: {fileID: 1946991090}
   noteSpawner: {fileID: 913792822}
   obstacleSpawner: {fileID: 164344431}
-  carSpawnInterval: 3.2
+  carSpawnInterval: 1.8
 --- !u!4 &1946991092
 Transform:
   m_ObjectHideFlags: 0
@@ -4316,4 +4320,4 @@ SceneRoots:
   - {fileID: 1946991092}
   - {fileID: 164344430}
   - {fileID: 913792821}
-  - {fileID: 629355985}
+  - {fileID: 1086023988}
