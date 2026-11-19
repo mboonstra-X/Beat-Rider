@@ -5,7 +5,7 @@ public class NoteHit : MonoBehaviour
     public AudioClip NoteHitSound;
     // so its less disturbing when hitting note
     [Range(0f, 1f)]
-    public float hitVolume = 0.5f;
+    public float hitVolume = 0.25f;
 
     private void OnCollisionEnter(Collision collision)
     {

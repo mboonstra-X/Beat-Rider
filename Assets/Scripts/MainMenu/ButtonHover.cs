@@ -5,6 +5,8 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 {
     [SerializeField] private Transform textObject;
 
+
+
     private Vector3 originalScale;
 
     private void Start()
